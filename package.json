@@ -1,0 +1,10 @@
+{
+  "name": "cljs-repros",
+  "version": "1.0.0",
+  "main": "out/index.js",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "bunyan": "1.8.12"
+  }
+}

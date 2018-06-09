@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -eu
+
+export NODE_ENV=dev
+
+clojure -Srepro -A:dev -m figwheel.main -b dev -r
+
+# clojure -Srepro -A:cljs-jvm:dev:unit-test -m cljs.main -re node -co dev.cljs.edn -c my-ns.logging -r

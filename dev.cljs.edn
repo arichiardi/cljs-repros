@@ -1,0 +1,13 @@
+{:main my-ns.logging
+ :output-to "out/index.js"
+ :output-dir "out"
+ :optimizations :none
+ :source-map true
+ :source-map-timestamp false
+ :target :nodejs
+ :static-fns true
+ :fn-invoke-direct true
+ :compiler-stats true
+ :install-deps false
+ :verbose true
+ :npm-deps {:bunyan "1.8.12"}}
