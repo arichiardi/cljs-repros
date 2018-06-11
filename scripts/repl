@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-set -eu
+set -eux
 
 export NODE_ENV=dev
 
-clojure -Srepro -A:dev -m figwheel.main -b dev -r
-
-# clojure -Srepro -A:cljs-jvm:dev:unit-test -m cljs.main -re node -co dev.cljs.edn -c my-ns.logging -r
+if [[ "$@" =~ "jvm" ]]; then
+    clojure -Srepro -A:dev -m cljs.main -re node -co dev.cljs.edn -c my-ns.logging -r
+else
+    clojure -Srepro -A:dev -m figwheel.main -b dev -r
+fi
