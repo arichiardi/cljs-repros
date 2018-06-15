@@ -9,5 +9,4 @@
  :fn-invoke-direct true
  :compiler-stats true
  :install-deps false
- :verbose true
- :npm-deps {:bunyan "1.8.12"}}
+ :verbose true}

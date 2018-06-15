@@ -1,0 +1,5 @@
+((nil . ((projectile-grep-default-files . '("*.clj" "*.cljs" "*.cljc"))
+         (cider-preferred-build-tool . "clojure-cli")
+         (cider-default-cljs-repl . figwheel-main)
+         (cider-clojure-cli-global-options . "-A:dev")))
+ (clojure-mode . ((eval . (cider-mode)))))

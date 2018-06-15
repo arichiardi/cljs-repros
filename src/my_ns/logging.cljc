@@ -1,14 +1,6 @@
 (ns my-ns.logging
-  #?(:cljs (:require bunyan))
-  #?(:cljs (:require-macros [my-ns.logging])))
+  (:require [util :as node-util]))
 
-#?(:cljs
-   (defonce ^{:doc "The system logger"}
-     parent-logger
-     (.createLogger bunyan #js {:name "my-ns" :serializers bunyan/stdSerializers})))
+;; (def node-util (js/require "util")) ;; this does not work either
 
-#?(:clj
-   (defmacro self-ns-name
-     "Return the namespace name as string (at compile time - macro)."
-     []
-     (str *ns*)))
+(println (node-util/format "testing %s" "this"))
