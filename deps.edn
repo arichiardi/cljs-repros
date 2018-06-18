@@ -3,6 +3,7 @@
         org.clojure/clojurescript {:mvn/version "1.10.312"}
         org.clojure/core.async {:mvn/version "0.4.474"}}
  :aliases {:dev {:extra-paths ["dev"]
-                 :extra-deps {com.bhauman/figwheel-main {:mvn/version "0.1.1"}
+                 :extra-deps {com.bhauman/figwheel-main {:mvn/version "0.1.3-SNAPSHOT"}
                               cider/cider-nrepl {:mvn/version "0.18.0-SNAPSHOT"}
-                              cider/piggieback {:mvn/version "0.3.6"}}}}}
+                              cider/piggieback {:mvn/version "0.3.6"}}}
+           :rebel {:extra-deps {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.3"}}}}}
